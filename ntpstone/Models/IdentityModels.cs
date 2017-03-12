@@ -29,6 +29,8 @@ namespace ntpstone.Models
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Quartz> Quartzs { get; set; }
         public DbSet<MembershipType> MembershipTypes { get; set; }
+        //4.Add to applicationDbContext
+        public DbSet<NewSale> NewSales { get; set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

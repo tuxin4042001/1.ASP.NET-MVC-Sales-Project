@@ -236,11 +236,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomerController.cs" />
     <Compile Include="Controllers\Api\QuartzController.cs" />
+    <Compile Include="Controllers\Api\SaleController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\HttpResponseException.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\QuartzController.cs" />
+    <Compile Include="Dtos\NewSaleDto.cs" />
     <Compile Include="Dtos\CustomerDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\QuartzDto.cs" />
@@ -296,8 +298,13 @@
     <Compile Include="Migrations\201703102232331_AddDrivingLicenseToApplicationUser.Designer.cs">
       <DependentUpon>201703102232331_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703121902199_addDomainModelNewSale.cs" />
+    <Compile Include="Migrations\201703121902199_addDomainModelNewSale.Designer.cs">
+      <DependentUpon>201703121902199_addDomainModelNewSale.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\NewSale.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -608,6 +615,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703102232331_AddDrivingLicenseToApplicationUser.resx">
       <DependentUpon>201703102232331_AddDrivingLicenseToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703121902199_addDomainModelNewSale.resx">
+      <DependentUpon>201703121902199_addDomainModelNewSale.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
