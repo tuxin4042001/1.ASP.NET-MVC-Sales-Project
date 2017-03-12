@@ -1,0 +1,42 @@
+﻿@model ntpstone.Models.Customer
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table border="2" style="margin-top:10px">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Customer</th>
+            <th>Address</th>
+            <th>ZipCode</th>
+            <th>CellPhoneNumber</th>
+            <th>OfficeNumber</th>
+            <th>City</th>
+            <th>District</th>
+            <th>WebSite</th>
+            <th>Email</th>
+            <th>isFirstTimeBuyer</th>
+            <th>ContactPerson</th>
+            <th>MembershipType</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Html.ActionLink(Model.Name, "Detail", "Customer", new { id = Model.Id }, null)</td>
+            <td>@Model.Address</td>
+            <td>@Model.ZipCode</td>
+            <td>@Model.CellPhoneNumber</td>
+            <td>@Model.OfficeNumber</td>
+            <td>@Model.City</td>
+            <td>@Model.District</td>
+            <td>@Model.WebSite</td>
+            <td>@Model.Email</td>
+            <td>@Model.isFirstTimeBuyer</td>
+            <td>@Model.ContactPerson</td>
+            <td>@Model.MembershipType.Name</td>
+        </tr>
+    </tbody>
+</table>

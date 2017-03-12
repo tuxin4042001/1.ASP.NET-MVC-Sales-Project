@@ -1,0 +1,67 @@
+﻿@model IEnumerable<ntpstone.Models.Quartz>
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table id="quartzs" border="2" style="margin-top: 10px; text-align: center">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>ModelNumber</td>
+            <td>Thickness</td>
+            <td>Arrival Quantity</td>
+            <td>Sale Quantity</td>
+            <td>Stock Quantity</td>
+            <td>Actual Stock Quantity</td>
+            <td>Color</td>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            var table = $("#quartzs").DataTable({
+                    ajax: {
+                        url: "/api/quartz",
+                        dataSrc: ""
+                    },
+                    columns: [
+                        {
+                            data: "id"
+
+                        },
+                        {
+                            data: "name"
+                        },
+                        {
+                            data: "modelNumber"
+
+                        },
+                        {
+                            data: "thickness"
+                        },
+                        {
+                            data: "arrivalQuantity"
+                        },
+                        {
+                            data: "saleQuantity"
+                        },
+                        {
+                            data: "stockQuantity"
+                        },
+                        {
+                            data: "actualStockQuantity"
+                        },
+                        {
+                            data: "color"
+                        }
+                    ]
+
+                });
+        })
+    </script>
+}

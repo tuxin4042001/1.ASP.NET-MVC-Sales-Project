@@ -1,0 +1,34 @@
+﻿@model ntpstone.Models.Quartz
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table border="2" style="margin-top:10px">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>ModelNumber</th>
+            <th>Thickness</th>
+            <th>Arrival Quantity</th>
+            <th>Sale Quantity</th>
+            <th>Stock Quantity</th>
+            <th>Actual Stock Quantity</th>
+            <th>Color</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@Model.Id</td>
+            <td>@Html.ActionLink(Model.Name, "Detail", "Customer", new { id = Model.Id }, null)</td>
+            <td>@Model.ModelNumber</td>
+            <td>@Model.thickness</td>
+            <td>@Model.ArrivalQuantity</td>
+            <td>@Model.SaleQuantity</td>
+            <td>@Model.StockQuantity</td>
+            <td>@Model.ActualStockQuantity</td>
+            <td>@Model.Color</td>
+        </tr>
+    </tbody>
+</table>

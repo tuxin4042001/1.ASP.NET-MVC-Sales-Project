@@ -1,0 +1,89 @@
+﻿@model ntpstone.ViewModels.NewCustomerViewModel
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Update</h2>
+@using (Html.BeginForm("Update", "Customer"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.Name)
+        @Html.TextBoxFor(m => m.Customer.Name, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.Name)
+    </div>
+    <br/>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.Address)
+        @Html.TextBoxFor(m => m.Customer.Address, new {@class = "form-control"})
+        @Html.ValidationMessageFor(m => m.Customer.Address)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.ZipCode)
+        @Html.TextBoxFor(m => m.Customer.ZipCode, new {@class = "form-control"})
+        @Html.ValidationMessageFor(m => m.Customer.ZipCode)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.CellPhoneNumber)
+        @Html.TextBoxFor(m => m.Customer.CellPhoneNumber, new {@class = "form-control"})
+        @Html.ValidationMessageFor(m => m.Customer.CellPhoneNumber)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.OfficeNumber)
+        @Html.TextBoxFor(m => m.Customer.OfficeNumber, new {@class = "form-control"})
+        @Html.ValidationMessageFor(m => m.Customer.OfficeNumber)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.City)
+        @Html.TextBoxFor(m => m.Customer.City, new {@class = "form-control"})
+        @Html.ValidationMessageFor(m => m.Customer.City)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.District)
+        @Html.TextBoxFor(m => m.Customer.District, new {@class = "form-control"})
+        @Html.ValidationMessageFor(m => m.Customer.District)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.WebSite)
+        @Html.TextBoxFor(m => m.Customer.WebSite, new {@class = "form-control"})
+        @Html.ValidationMessageFor(m => m.Customer.WebSite)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.Email)
+        @Html.TextBoxFor(m => m.Customer.Email, new {@class = "form-control"})
+        @Html.ValidationMessageFor(m => m.Customer.Email)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.ContactPerson)
+        @Html.TextBoxFor(m => m.Customer.ContactPerson, new {@class = "form-control"})
+        @Html.ValidationMessageFor(m => m.Customer.ContactPerson)
+    </div>
+    <br/>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.ConsumptionAmount)
+        @Html.TextBoxFor(m => m.Customer.ConsumptionAmount, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Customer.ConsumptionAmount)
+    </div>
+    <br />
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.MembershipType)
+        @Html.DropDownListFor(m => m.Customer.MembershipTypeId, new SelectList(Model.MembershipTypes, "Id", "Name"), "Select MembershipType", new {@class = "form-control"})
+    </div>
+    <br/>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Customer.isFirstTimeBuyer)
+        @Html.CheckBoxFor(m => m.Customer.isFirstTimeBuyer)
+    </div>
+    <br/>
+    @Html.HiddenFor(m => m.Customer.Id)
+    <button type="submit" class="btn btn-primary">Save</button>
+}
+

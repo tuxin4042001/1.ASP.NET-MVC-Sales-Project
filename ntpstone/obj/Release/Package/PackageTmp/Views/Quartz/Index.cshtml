@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ntpstone.Models.Quartz>
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*添加New Customer按钮方法一*@
+<input type="button" value="New Quartz" onclick="window.location.assign('/Quartz/New')">
+
+<table border="2" style="margin-top:10px">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>ModelNumber</td>
+            <td>Thickness</td>
+            <td>Arrival Quantity</td>
+            <td>Sale Quantity</td>
+            <td>Stock Quantity</td>
+            <td>Actual Stock Quantity</td>
+            <td>Color</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var quartz in Model)
+            {
+            <tr>
+                <td>@quartz.Id</td>
+                <td>@Html.ActionLink(quartz.Name, "Edit", "Quartz", new { id = quartz.Id }, null)</td>
+                <td>@quartz.ModelNumber</td>
+                <td>@quartz.thickness</td>
+                <td>@quartz.ArrivalQuantity</td>
+                <td>@quartz.SaleQuantity</td>
+                <td>@quartz.StockQuantity</td>
+                <td>@quartz.ActualStockQuantity</td>
+                <td>@quartz.Color</td>
+                <td>@Html.ActionLink("Delete","Delete","Quartz",new {id = quartz.Id}, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>

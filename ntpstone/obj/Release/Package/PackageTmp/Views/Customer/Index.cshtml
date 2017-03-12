@@ -1,0 +1,46 @@
+﻿@model IEnumerable<ntpstone.Models.Customer>
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*添加New Customer按钮方法一*@
+<input type="button" value="New Customer" onclick="window.location.assign('/Customer/New')">
+
+<table border="2" style="margin-top:10px">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Customer</td>
+            <td>Address</td>
+            <td>ZipCode</td>
+            <td>CellPhoneNumber</td>
+            <td>OfficeNumber</td>
+            <td>City</td>
+            <td>District</td>
+            <td>Consumption Amount</td>
+            <td>MembershipType</td>
+            <td>Discount Rate</td>
+            <td>Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var customer in Model)
+            {
+            <tr>
+                <td>@customer.Id</td>
+                <td>@Html.ActionLink(customer.Name, "Edit", "Customer", new { id = customer.Id }, null)</td>
+                <td>@customer.Address</td>
+                <td>@customer.ZipCode</td>
+                <td>@customer.CellPhoneNumber</td>
+                <td>@customer.OfficeNumber</td>
+                <td>@customer.City</td>
+                <td>@customer.District</td>
+                <td>@customer.ConsumptionAmount</td>
+                <td>@customer.MembershipType.Name</td>
+                <td>@customer.MembershipType.DiscountRate%</td>
+                <td>@Html.ActionLink("Delete Customer","Delete","Customer",new {id = customer.Id}, null)</td>
+            </tr>
+        }
+    </tbody>
+</table>

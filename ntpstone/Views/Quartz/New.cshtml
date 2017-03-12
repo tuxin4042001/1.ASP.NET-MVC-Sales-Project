@@ -1,0 +1,47 @@
+﻿@model ntpstone.Models.Quartz
+@{
+    ViewBag.Title = "New";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>New</h2>
+@using (Html.BeginForm("Create", "Quartz"))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name)
+        @Html.TextBoxFor(m => m.Name, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ModelNumber)
+        @Html.TextBoxFor(m => m.ModelNumber, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.thickness)
+        @Html.TextBoxFor(m => m.thickness, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ArrivalQuantity)
+        @Html.TextBoxFor(m => m.ArrivalQuantity, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SaleQuantity)
+        @Html.TextBoxFor(m => m.SaleQuantity, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.StockQuantity)
+        @Html.TextBoxFor(m => m.StockQuantity, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ActualStockQuantity)
+        @Html.TextBoxFor(m => m.ActualStockQuantity, new {@class = "form-control"})
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Color)
+        @Html.TextBoxFor(m => m.Color, new {@class = "form-control"})
+    </div>
+    @Html.HiddenFor(m => m.Id)
+    <button type="submit" class="btn btn-primary">Save</button>
+}
+
+
+
