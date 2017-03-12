@@ -302,6 +302,26 @@
     <Compile Include="Migrations\201703121902199_addDomainModelNewSale.Designer.cs">
       <DependentUpon>201703121902199_addDomainModelNewSale.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703122008220_addAvailableQuantityinQuartzDomainModel.cs" />
+    <Compile Include="Migrations\201703122008220_addAvailableQuantityinQuartzDomainModel.Designer.cs">
+      <DependentUpon>201703122008220_addAvailableQuantityinQuartzDomainModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703122024201_modifyNewSaleDomailModel.cs" />
+    <Compile Include="Migrations\201703122024201_modifyNewSaleDomailModel.Designer.cs">
+      <DependentUpon>201703122024201_modifyNewSaleDomailModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703122051472_modifyNewSaleDomainModel.cs" />
+    <Compile Include="Migrations\201703122051472_modifyNewSaleDomainModel.Designer.cs">
+      <DependentUpon>201703122051472_modifyNewSaleDomainModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703122107106_addinvoiceNumandsaleDateToDomainModelNewSale.cs" />
+    <Compile Include="Migrations\201703122107106_addinvoiceNumandsaleDateToDomainModelNewSale.Designer.cs">
+      <DependentUpon>201703122107106_addinvoiceNumandsaleDateToDomainModelNewSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201703122120591_addAttributesToDomainModelNewSale.cs" />
+    <Compile Include="Migrations\201703122120591_addAttributesToDomainModelNewSale.Designer.cs">
+      <DependentUpon>201703122120591_addAttributesToDomainModelNewSale.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\NewSale.cs" />
@@ -618,6 +638,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703121902199_addDomainModelNewSale.resx">
       <DependentUpon>201703121902199_addDomainModelNewSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703122008220_addAvailableQuantityinQuartzDomainModel.resx">
+      <DependentUpon>201703122008220_addAvailableQuantityinQuartzDomainModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703122024201_modifyNewSaleDomailModel.resx">
+      <DependentUpon>201703122024201_modifyNewSaleDomailModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703122051472_modifyNewSaleDomainModel.resx">
+      <DependentUpon>201703122051472_modifyNewSaleDomainModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703122107106_addinvoiceNumandsaleDateToDomainModelNewSale.resx">
+      <DependentUpon>201703122107106_addinvoiceNumandsaleDateToDomainModelNewSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703122120591_addAttributesToDomainModelNewSale.resx">
+      <DependentUpon>201703122120591_addAttributesToDomainModelNewSale.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

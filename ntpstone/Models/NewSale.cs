@@ -18,26 +18,20 @@ namespace ntpstone.Models
         [Required]
         public Quartz Quartz { get; set; }
 
-        [Required]
         public string invoiceNum { get; set; }
 
-        [Required]
         public DateTime saleDate { get; set; }
 
-        [Required]
         public int saleQuantity { get; set; }
 
-        [Required]
         public double unitPrice { get; set; }
 
-        [Required]
         public double salePrice { get; set; }
 
         public double GST { get; set; }
 
         public double lineTotal { get; set; }
 
-        [Required]
         public string paymentMethod { get; set; }
 
         public double shortCredit { get; set; }
