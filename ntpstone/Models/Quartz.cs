@@ -14,8 +14,10 @@ namespace ntpstone.Models
         public int ArrivalQuantity { get; set; }
         public int SaleQuantity { get; set; }
         public int StockQuantity { get; set; }
-        public int AvailableQuantity { get; set; }
         public int ActualStockQuantity { get; set; }
+        public int SaleQuantity2 { get; set; }
+        public int HoldQuantity { get; set; }
+        public int AvailableQuantity { get; set; }
         public string Color { get; set; }
     }
 }

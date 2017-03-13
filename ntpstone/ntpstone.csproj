@@ -322,6 +322,10 @@
     <Compile Include="Migrations\201703122120591_addAttributesToDomainModelNewSale.Designer.cs">
       <DependentUpon>201703122120591_addAttributesToDomainModelNewSale.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201703130222590_addSaleQuantityAndHoldQuantityToQuartzDomainModel.cs" />
+    <Compile Include="Migrations\201703130222590_addSaleQuantityAndHoldQuantityToQuartzDomainModel.Designer.cs">
+      <DependentUpon>201703130222590_addSaleQuantityAndHoldQuantityToQuartzDomainModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\NewSale.cs" />
@@ -653,6 +657,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201703122120591_addAttributesToDomainModelNewSale.resx">
       <DependentUpon>201703122120591_addAttributesToDomainModelNewSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201703130222590_addSaleQuantityAndHoldQuantityToQuartzDomainModel.resx">
+      <DependentUpon>201703130222590_addSaleQuantityAndHoldQuantityToQuartzDomainModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

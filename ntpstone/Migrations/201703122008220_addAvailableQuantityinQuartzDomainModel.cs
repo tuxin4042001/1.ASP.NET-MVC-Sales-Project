@@ -7,7 +7,7 @@ namespace ntpstone.Migrations
     {
         public override void Up()
         {
-            Sql("Update Quartzs Set AvailableQuantity = ActualStockQuantity");
+            Sql("Update Quartzs Set AvailableQuantity = StockQuantity");
         }
         
         public override void Down()

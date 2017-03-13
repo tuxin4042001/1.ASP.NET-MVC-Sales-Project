@@ -792,3 +792,4 @@ C:\Users\Administrator\projects\1.ASP.NET-MVC-Sales-Project\ntpstone\obj\Debug\n
 C:\Users\Administrator\projects\1.ASP.NET-MVC-Sales-Project\ntpstone\obj\Debug\ntpstone.Migrations.modifyNewSaleDomainModel.resources
 C:\Users\Administrator\projects\1.ASP.NET-MVC-Sales-Project\ntpstone\obj\Debug\ntpstone.Migrations.addinvoiceNumandsaleDateToDomainModelNewSale.resources
 C:\Users\Administrator\projects\1.ASP.NET-MVC-Sales-Project\ntpstone\obj\Debug\ntpstone.Migrations.addAttributesToDomainModelNewSale.resources
+C:\Users\Administrator\projects\1.ASP.NET-MVC-Sales-Project\ntpstone\obj\Debug\ntpstone.Migrations.addSaleQuantityAndHoldQuantityToQuartzDomainModel.resources

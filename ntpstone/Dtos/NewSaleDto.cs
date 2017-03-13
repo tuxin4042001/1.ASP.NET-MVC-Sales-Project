@@ -19,15 +19,15 @@ namespace ntpstone.Dtos
 
         //public DateTime saleDate { get; set; }
 
-        public int saleQuantity { get; set; }
+        public List<int> saleQuantity { get; set; }
 
-        public double unitPrice { get; set; }
+        public List<double> unitPrice { get; set; }
 
-        public double salePrice { get; set; }
+        public List<double> salePrice { get; set; }
 
-        public double GST { get; set; }
+        public List<double> GST { get; set; }
 
-        public double lineTotal { get; set; }
+        public List<double> lineTotal { get; set; }
 
         public string paymentMethod { get; set; }
 
